@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:480px) {
+  iframe {
+    width: 440px;
+    height: 338px;
+    min-width: 100%;
+    min-height: 100%;
+    flex: none;
+    object-fit: cover;
+    margin-right: -72px;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    padding: 9px 11px;
+    margin-right: 1px;
+  }
+
+  .menu ul li {
+    padding: 10px 11px;
+    font-size: 16px;
+    margin-left: 13px;
+  }
+}
+
+@media (max-width: 880px) {
+  .menu {
+    margin-right: -77px;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    margin-left: -26px;
+  }
+
+  .buttons {
+    margin-right: -72px;
+  }
+}

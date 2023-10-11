@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif
+}
+
+a#login-button.button.logout.login.w-button {
+  background-color: #bd0102;
+  background-image: none;
+  border-radius: 25px;
+  border-width: 0;
+  bottom: auto;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  flex: 1;
+  float: right;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  left: auto;
+  border: groove #bd0102 2px;
+  letter-spacing: 3px;
+  line-height: 19px;
+  margin-left: -15px;
+  margin-right: 130px;
+  margin-top: 15px;
+  padding: 5px 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: background-color 150ms;
+  z-index: 30;
+}
+ 
+a#login-button.button.logout.login.w-button:active {
+  outline: 0;
+}
+ 
+a#login-button.button.logout.login.w-button:hover {
+  font-weight: 400;
+  outline: 0;
+  background: #fff;
+  color: #bd0102;
+}
+a#signin-button.button.signout.signin.w-button {
+  background-color: #bd0102;
+  background-image: none;
+  border-radius: 25px;
+  border-width: 0;
+  bottom: auto;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  flex: 1;
+  float: right;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  left: auto;
+  border: groove #bd0102 2px;
+  letter-spacing: 3px;
+  line-height: 19px;
+  margin-left: -15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 5px 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: background-color 150ms;
+  z-index: 30;
+}
+ 
+a#signin-button.button.signout.signin.w-button:active {
+  outline: 0;
+}
+ 
+a#signin-button.button.signout.signin.w-button:hover {
+  font-weight: 400;
+  outline: 0;
+  background: #fff;
+  color: #bd0102;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -299px;
+}
+.about_style {
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    color: #000;
+}
+
+@media (max-width:480px) {
+
+}
+
+@media (max-width:880px) {
+  .about_style {
+    max-width: 492px;
+    padding: 30px;
+    font-size: 25px;
+    margin-top: -50px;
+  }
+  .menu ul {
+    margin-left: 0px;
+}
+}

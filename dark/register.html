@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.7/bootstrap-notify.min.js"></script>
+  <link rel="styleshhet" href="css/style.css">
+  <link rel="stylesheet" href="css/register.css"> 
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <title>Registration Form In HTML and CSS</title>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2><a href="home.html" class="logo">Redbiller</a></h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
+          <li><a href="video.html">VIDEO</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <a id="login-button" ms-hide-element="true" href="login.html" class="button logout login w-button">Login</a>
+        <a id="signin-button" ms-hide-element="true" href="register.html"
+          class="button signout signin w-button">Register</a>
+      </div>
+
+
+
+    </div>
+    <div class="wrapper">
+      <div class="registration_form">
+        <div class="title">
+          Registration Form
+        </div>
+
+        <form action="php/register.php" method="post">
+          <div class="form_wrap">
+            <div class="input_grp">
+              <div class="input_wrap">
+                <label for="fname">Username</label>
+                <input type="text" id="name" name="name">
+              </div>
+              <div class="input_wrap">
+                <label for="lname">Password</label>
+                <input type="text" id="password" name="password">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <label for="email">Email Address</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="input_wrap">
+              <label for="email">Age</label>
+              <input type="text" id="age" name="age">
+            </div>
+            <div class="input_wrap">
+              <label>Gender</label>
+              <ul>
+                <li>
+                  <label class="radio_wrap">
+                    <input type="radio" name="gender" value="male" class="input_radio" checked>
+                    <span>Male</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio_wrap">
+                    <input type="radio" name="gender" value="female" class="input_radio">
+                    <span>Female</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="input_wrap">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city">
+            </div>
+            <div class="input_wrap">
+              <label for="country">Country</label>
+              <select id="country" name="country"
+                style="width:100%; border-radius:3px; border:1px solid #9597a6; padding:10px;">
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="UAE">UAE</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <button type="submit" class="submit_btn">Register Now</button>
+              <div class="or-seperator"><i>or</i></div>
+        </form>
+
+        <div class="text-center social-btn">
+          <a href="https://www.facebook.com/reg/" class="btn btn-primary"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/accounts/signup/email?hl=en" class="btn btn-primary"
+            style="background-color: #833AB4;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/i/flow/signup" class="btn btn-info"><i class="fab fa-twitter"></i></a>
+          <a href="https://accounts.google.com/login?hl=en" class="btn btn-danger"><i class="fab fa-google"></i></a>
+        </div>
+
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+    
+</body>
+<script>
+  $(document).ready(function () {
+    $("form").submit(function (event) {
+      event.preventDefault();
+
+      $.ajax({
+        type: "POST",
+        url: "php/register.php",
+        data: $(this).serialize(),
+        dataType: "json",
+        success: function (response) {
+          if (response.message === "Email already exists") {
+            $.notify({
+              title: "",
+              message: response.message
+            }, {
+              type: 'danger', 
+              delay: 2000
+            });
+          } else {
+            $.notify({
+              title: "",
+              message: response.message
+            }, {
+              type: 'success',
+              delay: 2000
+            });
+          }
+        },
+        error: function () {
+          $.notify({
+            title: "",
+            message: "Email already exists. Please use a different email."
+          }, {
+            type: 'danger',
+            delay: 2000
+          });
+        },
+      });
+    });
+  });
+</script>
+
+
+</html>

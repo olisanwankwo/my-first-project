@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Bootstrap Sign in Form with Social Login Buttons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2><a href="home.html" class="logo">Redbiller</a></h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
+          <li><a href="video.html">VIDEO</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <a id="login-button" ms-hide-element="true" href="login.html" class="button logout login w-button">Login</a>
+        <a id="signin-button" ms-hide-element="true" href="register.html"
+          class="button signout signin w-button">Register</a>
+      </div>
+
+
+
+    </div>
+    <div class="login-form">
+      <form action="php/login.php" method="post">
+        <h2 class="text-center">Login</h2>
+
+        <label class="form-label">Email</label>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Email address" required>
+        </div>
+
+        <label class="form-label">Password</label>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text"><i class="fas fa-key"></i></span>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        </div>
+        <div class="my-3">
+          <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+
+        <div class="or-seperator"><i>or</i></div>
+
+        <div class="text-center social-btn">
+          <a href="https://www.facebook.com/login/" class="btn btn-primary"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" class="btn btn-primary" style="background-color: #833AB4;"
+            href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a href="httpa://www.twitter.com/accounts/login/" class="btn btn-info"><i class="fab fa-twitter"></i></a>
+          <a href="https://accounts.google.com/servicelogin" class="btn btn-danger"><i class="fab fa-google"></i></a>
+        </div>
+
+        <div class="my-3 text-center">
+          <a href="Forget.html" class="float-right text-success">Forgot Password?</a>
+        </div>
+
+      </form>
+      <div class="hint-text">Don't have an account? <a href="register.html" class="text-success">Register Now!</a></div>
+    </div>
+</body>
+
+</html>

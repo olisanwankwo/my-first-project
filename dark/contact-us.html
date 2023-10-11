@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2><a href="home.html" class="logo">Redbiller</a></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact-us.html">CONTACT</a></li>
+                    <li><a href="video.html">VIDEO</a></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <a id="login-button" ms-hide-element="true" href="login.html"
+                    class="button logout login w-button">Login</a>
+                <a id="signin-button" ms-hide-element="true" href="register.html"
+                    class="button signout signin w-button">Register</a>
+            </div>
+
+
+
+        </div>
+
+        <div style="clear:both;float:none">
+            <div class="contact-section">
+
+                <h1></h1>
+                <div class="border">Contact Us</div>
+                <form class="contact-form" action="us.php" method="post">
+                    <input name="name" type="text" class="contact-form-text" placeholder="Name">
+                    <input name="email" type="email" class="contact-form-text" placeholder="Email">
+                    <input name="subject" type="text" class="contact-form-text" placeholder="Subjet">
+                    <textarea name="message" class="contact-form-text" placeholder="Message"></textarea>
+                    <input type="submit" class="contact-form-text" placeholder="send">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

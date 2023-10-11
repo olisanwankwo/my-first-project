@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/red.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+form i {
+    margin-left: 321px;
+    margin-top: -54px;
+    margin-bottom: 55px;
+    cursor: pointe;
+  }
+  
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    flex-grow: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 9px 31px;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #bd0102;
+}
+
+.icon {
+    max-width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #bd0102;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons .button {
+    background-color: #bd0102;
+    background-image: none;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    flex: 1;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    border: groove #bd0102 2px;
+    letter-spacing: 3px;
+    line-height: 19px;
+    margin: 15px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 150ms;
+}
+
+.buttons .button:active {
+    outline: 0;
+}
+
+.buttons .button:hover {
+    font-weight: 400;
+    outline: 0;
+    background: #fff;
+    color: #bd0102;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #bd0102;
+    border: 2px solid #bd0102;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.content .par {
+    color: #000000;
+    margin-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    max-width: 1600px;
+    height: 40px;
+    background: #bd0102;
+    border: groove #bd0102 2px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+}
+
+
+.cn:hover {
+    background: #fff;
+}
+
+.content .cn a:hover {
+    color: #bd0102;
+}
+
+.content span {
+    color: #000000;
+}
+
+.hero-section {
+    display: flex;
+    padding: 5vw;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-content {
+    padding: 10vh 5vw;
+    max-width: 600px;
+}
+
+.form {
+    max-width: 300px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    transform: translate(0%, -5%);
+    border-radius: 10px;
+    padding: 25px;
+    color: #fff;
+}
+
+.form h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: #bd0102;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #bd0102;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #bd0102;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #bd0102;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #bd0102;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #bd0102;
+}
+
+@media (max-width:480px) {
+    .form {
+        display: none;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        background-color: #fff;
+        border-color: #bd0102;
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        padding: 9px 11px;
+    }
+
+    .menu ul li {
+        padding: 9px 11px;
+    }
+
+    .buttons {
+        order: 2;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .content h1 {
+        font-size: 32px
+    }
+}
+
+@media (max-width:880px) {
+    .form {
+        max-width: 350px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+        transform: translate(0%, -5%);
+        border-radius: 10px;
+        padding: 25px;
+        color: #fff;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        background-color: #fff;
+        border-color: #bd0102;
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        order: 2;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .content h1 {
+        font-size: 32px
+    }
+}

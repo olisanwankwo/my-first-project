@@ -1,0 +1,72 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background: url(images/red.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    color: #bd0102;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.logo {
+    color: #bd0102;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    font-weight: 100;
+    float: left;
+    padding-top: 10px;
+    margin-left: -875px;
+    text-decoration: none;
+    margin-top: -167px;
+}
+
+h1 {
+    margin-top: -70px;
+}
+
+
+nav {
+    float: left;
+    margin-top: -164px;
+    margin-left: -543px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    padding: 9px 64px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-info, .recent-activity {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 168px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
